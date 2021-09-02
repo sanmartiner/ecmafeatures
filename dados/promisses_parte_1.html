@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <script>
+
+        //requisicoes Http  
+        let resposta = {}
+
+        let promessa = new Promise((resolve, reject) => {
+            try {
+
+                //throw new Error('Opa! Houve um erro!')
+
+                setTimeout(() => {
+                    resolve('Promessa concluida com sucesso')
+                }, 3000)
+            } catch (e) {
+
+                setTimeout(() => {
+                    reject(e)
+                }, 3000)
+            }
+        })
+        console.log(promessa)
+
+        setTimeout(() => {
+            console.log(promessa)
+        }, 5000)
+
+    </script>>
+</body>
+
+</html>
